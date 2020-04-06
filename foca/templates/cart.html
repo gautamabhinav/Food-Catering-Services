@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOUR CART</title>
+        {% load static %}
+        <script>
+            function check(){
+                var result=confirm('DO YOU REALLY WISH TO DELETE THE DETAIL??');
+                return result;
+            }
+            
+        </script>
+        <style>
+            .mar{
+                margin-top: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <center><H2>
+            {{order}}
+        
+        <BR>
+            <a href="/home/">ORDER MORE</a><br><br>
+            <a href="/delete/" onclick="return check()">CLEAR THE CART</a><br><br>
+            <a href="/confirm/">CONFIRM ORDER</a>
+            <br><br>
+            <a href="/send/">SEND CONFIRMATION MAIL</a>
+            <br><br>
+            </H2>
+        </center>
+            
+    </body>
+
+</html>
